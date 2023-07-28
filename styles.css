@@ -3,41 +3,50 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: blanchedalmond;
     background-image: url(R1-09976-0020.JPG);
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+  
 }
 
 h1{
     font-size: 35px;
     font-weight: 1000;
-    margin-top: 1.5em; 
+    margin-top: 2em;
 }
 
 main {
-    border-right: 0.4em double rgb(255, 176, 0);
-    border-left: 0.4em double rgb(255, 176, 0);;
+
+display: flex;
+justify-content: space-between;
+align-items: top;
+
+}
+
+section{
+    width: 70%;
+    margin: 1em;
+    padding-left: 2em;
+}
+
+p{
+    padding: 1em;
 }
 
 .wrapper {
     color: rgb(121, 81, 51);
-    width: 75%;
- /*    margin: 0, auto;
-    margin-left: 1em;  */
 }
 
 .My_Blog {
 color: rgb(89, 88, 94);
 display: flex;
 justify-content: center;
-align-items: top;
+align-items: flex-start;
 }
 
 nav {
     background-color: rgb(233, 207, 175);
     border-radius: 5em;
     width: 100%;
+    height: 2em;
+
 }
 
 nav:hover{
@@ -47,15 +56,16 @@ nav:hover{
 nav ul {
 display: flex;
 justify-content: space-around;
-list-style: none;
-padding: 1em;
 font-size: 1em;
+list-style: none;
 font-weight: 550;
 }
 
 nav a {
+    margin: 0.5em;
     color: rgb(150, 105, 7);
     text-decoration: none;
+  
 }
 
 .logo {
@@ -70,26 +80,30 @@ transform: none;
 }
 
 h2, h3, h4 {
-    text-align: center;
-    color: rgb(104, 70, 20);
+color: rgb(104, 70, 20);
+text-align: center;
 }
 
-aside{
-    margin-top: 3em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
+
+
+aside {
+margin-top: 3em;
+  border: solid ;
+  padding: 1em;
+  height: fit-content;
+ 
 }
 
-aside a {
-    text-decoration: none;
+aside li{
+    list-style: none;
+    padding: 0.7em;
+    margin-left: 1em;
 }
 
-#gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
+.end {
+  margin-top: 2em;
+    font-size: small;
+  
 }
 
 img:hover{
@@ -97,27 +111,28 @@ img:hover{
 }
 
 img {
-width: 20em;
+width: 10em;
 border-radius: 1em;
     
 }
 
-.part1  {
-margin: 2em;
+.part1:hover {
+    background-color: rgb(226, 194, 139);
+    border-radius: 2em;
 }
 
-.part2 {
-margin: 2em;
-margin-top: 4em;
-margin-bottom: 4em;
+.part2:hover {
+    background-color: rgb(226, 194, 139);
+    border-radius: 2em;
 }
 
 .part3{
-margin: 2em;
-margin-top: 4em;
+    margin-top: 3em;
 }
 
 footer {
+border-top: double ;
 text-align: center;
-padding-top: 3em;
+padding-top: 1em;
+clear: both;
 }
